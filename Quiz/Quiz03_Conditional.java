@@ -4,26 +4,24 @@ public class Quiz03_Conditional {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.print("±¹¾îÁ¡¼ö : ");
+		System.out.print("êµ­ì–´ì ìˆ˜ : ");
 		int korean = Integer.parseInt(sc.nextLine());
-		System.out.print("¼öÇĞÁ¡¼ö : ");
+		System.out.print("ìˆ˜í•™ì ìˆ˜ : ");
 		int math = Integer.parseInt(sc.nextLine());
-		System.out.print("¿µ¾îÁ¡¼ö : ");
+		System.out.print("ì˜ì–´ì ìˆ˜ : ");
 		int english = Integer.parseInt(sc.nextLine());
 		int total = korean + math + english;
 		double average = total / 3;
 
-		if (korean >= 40 && math >= 40 && english >= 40) {
-			if (average >= 60) {
-				System.out.println("±¹¾î : " + korean);
-				System.out.println("¼öÇĞ : " + math);
-				System.out.println("¿µ¾î : " + english);
-				System.out.println("ÇÕ°è : " + total);
-				System.out.println("Æò±Õ : " + average);
-				System.out.println("ÃàÇÏÇÕ´Ï´Ù, ÇÕ°İÀÔ´Ï´Ù!");
+		if (korean >= 40 && math >= 40 && english >= 40 && average >= 60) {
+				System.out.println("êµ­ì–´ : " + korean);
+				System.out.println("ìˆ˜í•™ : " + math);
+				System.out.println("ì˜ì–´ : " + english);
+				System.out.println("í•©ê³„ : " + total);
+				System.out.println("í‰ê·  : " + average);
+				System.out.println("ì¶•í•˜í•©ë‹ˆë‹¤, í•©ê²©ì…ë‹ˆë‹¤!");
 			} else {
-				System.out.println("ºÒÇÕ°İÀÔ´Ï´Ù.");
+				System.out.println("ë¶ˆí•©ê²©ì…ë‹ˆë‹¤.");
 			}
 		}
 	}
-}
